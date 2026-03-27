@@ -1,0 +1,91 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Import Fonts for that Institutional Look */\
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@400;500&display=swap');\
+\
+.site-header \{\
+    width: 100%;\
+    background-color: #ffffff; /* White background like reference */\
+    border-bottom: 3px solid #001529; /* Midnight Navy bottom border */\
+    padding: 15px 0;\
+    position: sticky;\
+    top: 0;\
+    z-index: 1000;\
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);\
+\}\
+\
+.nav-container \{\
+    max-width: 1400px;\
+    margin: 0 auto;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+    padding: 0 40px;\
+\}\
+\
+/* Logo Styling */\
+.logo \{\
+    font-family: 'Cinzel', serif;\
+    font-size: 24px;\
+    letter-spacing: 2px;\
+    color: #001529; /* Midnight Navy */\
+\}\
+\
+.logo .llp \{\
+    font-size: 12px;\
+    vertical-align: top;\
+    margin-left: 2px;\
+    color: #B3995D; /* Antique Gold accent */\
+\}\
+\
+/* Menu Styling */\
+.nav-menu \{\
+    list-style: none;\
+    display: flex;\
+    gap: 30px;\
+    margin: 0;\
+    padding: 0;\
+\}\
+\
+.nav-menu li a \{\
+    text-decoration: none;\
+    color: #333;\
+    font-family: 'Roboto', sans-serif;\
+    font-size: 13px;\
+    font-weight: 500;\
+    letter-spacing: 1.5px; /* Matches the spaced-out look of the reference */\
+    transition: color 0.3s ease;\
+\}\
+\
+.nav-menu li a:hover \{\
+    color: #B3995D; /* Antique Gold on hover */\
+\}\
+\
+/* Icons Styling */\
+.nav-icons \{\
+    display: flex;\
+    align-items: center;\
+    gap: 20px;\
+    color: #001529;\
+    font-size: 14px;\
+    font-family: 'Roboto', sans-serif;\
+\}\
+\
+.icon-lang \{\
+    border-left: 1px solid #ccc;\
+    padding-left: 15px;\
+    font-weight: bold;\
+    cursor: pointer;\
+\}\
+\
+/* Mobile Responsiveness */\
+@media (max-width: 1024px) \{\
+    .nav-menu \{\
+        display: none; /* In a real site, you'd trigger a hamburger menu here */\
+    \}\
+\}}
