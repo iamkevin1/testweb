@@ -22,7 +22,7 @@ body { font-family: 'Times New Roman', Times, serif; color: #1a1a1a; line-height
 /* HERO */
 .hero {
     height: 85vh;
-    background: linear-gradient(rgba(0,21,41,0.5), rgba(0,21,41,0.5)), url('https://www.youtube.com/watch?v=OQq6cAMM7uA&pp=ygUcbGVnYWwgZmllbGQgYmFja2dyb3VuZCB2aWRlbw%3D%3D');
+    background: linear-gradient(rgba(0,21,41,0.5), rgba(0,21,41,0.5)), url('https://blog.ipleaders.in/wp-content/uploads/2020/01/istock-1062933252-1.jpg');
     background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center; text-align: center; color: white;
 }
