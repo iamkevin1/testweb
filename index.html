@@ -3,143 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Law Firm Website</title>
+    <title>Law Firm LLP | India</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- 🔵 HEADER -->
-    <header class="header">
-        <div class="nav-container">
-
-            <div class="nav-left">
-                <span class="menu-icon">&#9776;</span>
-                <div class="logo">
-                    <span class="brand-red">LAW FIRM</span><span class="llp">LLP</span>
-                </div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#">People</a></li>
-                <li><a href="#">Capabilities</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="#">Insights</a></li>
-                <li><a href="#">Global Citizenship</a></li>
-            </ul>
-
-            <div class="nav-right">
-                <span>🔍</span>
-                <span>🌐</span>
-            </div>
-
+    <header class="main-header">
+        <div class="header-left">
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+            <a href="#" class="logo">LAW FIRM <span class="llp">LLP</span></a>
+        </div>
+        <nav class="main-nav">
+            <a href="#about">People</a>
+            <a href="#practice">Capabilities</a>
+            <a href="#testimonials">Achievements</a>
+            <a href="#insights">Insights</a>
+            <a href="#contact">Global Citizenship</a>
+        </nav>
+        <div class="header-right">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-globe"></i>
         </div>
     </header>
 
-    <!-- 🦸 HERO -->
-    <section id="hero">
-        <h2>Trusted Legal Solutions</h2>
-        <p>Providing professional legal services with integrity and excellence.</p>
-        <button>Get Consultation</button>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Defining the Future of Law</h1>
+            <p>Integrity. Excellence. Results.</p>
+            <a href="#contact" class="cta-btn">GET CONSULTATION</a>
+        </div>
     </section>
 
-    <!-- 🧩 PRACTICE -->
-    <section id="practice">
-        <h2>Practice Areas</h2>
-
-        <div class="practice-container">
-            <div class="card">
-                <h3>Civil Litigation</h3>
-                <p>Expert representation in civil disputes.</p>
-            </div>
-
-            <div class="card">
-                <h3>Criminal Defence</h3>
-                <p>Strong defense for criminal cases.</p>
-            </div>
-
-            <div class="card">
-                <h3>Family Law</h3>
-                <p>Handling family-related legal matters.</p>
-            </div>
-
-            <div class="card">
-                <h3>Child Law</h3>
-                <p>Protecting children's rights and welfare.</p>
+    <section id="practice" class="section">
+        <div class="container">
+            <h2 class="center-title">Practice Areas</h2>
+            <div class="grid-3">
+                <div class="grid-item">
+                    <div class="icon-wrapper"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Criminal Defence</h3>
+                    <p>Rigorous representation and protection of your constitutional rights.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon-wrapper"><i class="fas fa-users"></i></div>
+                    <h3>Civil</h3>
+                    <p>Expert handling of disputes, contracts, and tort law matters.</p>
+                </div>
+                <div class="grid-item">
+                    <div class="icon-wrapper"><i class="fas fa-child"></i></div>
+                    <h3>Child</h3>
+                    <p>Dedicated legal support for child custody and juvenile justice.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 👨‍⚖️ ABOUT -->
-    <section id="about">
-        <div class="about-container">
-
-            <div class="about-image">
-                <img src="images/lawyer.jpg" alt="Lawyer">
+    <section id="about" class="section half-white-bg">
+        <div class="container">
+            <h2 class="center-title">About The Firm</h2>
+            <div class="flex-row">
+                <div class="flex-col founder-img-container">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=400" alt="Founder" class="small-height-img">
+                </div>
+                <div class="flex-col about-text text-center">
+                    <h3>Leading with Integrity</h3>
+                    <p>Our firm has been at the forefront of legal innovation for over 20 years. We combine traditional values with modern strategies to deliver exceptional results for our clients globally.</p>
+                </div>
             </div>
-
-            <div class="about-text">
-                <h2>About Our Firm</h2>
-                <p>
-                    We are a professional law firm committed to delivering high-quality legal services.
-                    Our experienced attorneys provide strategic solutions tailored to your needs.
-                </p>
-            </div>
-
         </div>
     </section>
 
-    <!-- 💬 TESTIMONIALS -->
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-
-        <div class="testimonial-container">
-            <div class="testimonial"><p>"Excellent service and guidance."</p></div>
-            <div class="testimonial"><p>"Highly recommended."</p></div>
-            <div class="testimonial"><p>"Reliable and trustworthy."</p></div>
-        </div>
-    </section>
-
-    <!-- 📞 CONTACT -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-                <h3>Office Address</h3>
-                <p>123 Law Street</p>
-                <p>Email: info@lawfirm.com</p>
-                <p>Phone: +91 98765 43210</p>
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="center-title">Testimonials</h2>
+            <div class="grid-3">
+                <div class="quote-card">
+                    <div class="proof-badge"><i class="fas fa-check-circle"></i> Verified Client</div>
+                    <p>"The most professional firm I have ever worked with. Truly exceptional."</p>
+                    <span class="client-name">Arun Kumar</span>
+                </div>
+                <div class="quote-card">
+                    <div class="proof-badge"><i class="fas fa-check-circle"></i> Verified Client</div>
+                    <p>"Their attention to detail and strategic thinking won our complex case."</p>
+                    <span class="client-name">Priya Sharma</span>
+                </div>
+                <div class="quote-card">
+                    <div class="proof-badge"><i class="fas fa-check-circle"></i> Verified Client</div>
+                    <p>"Integrity and transparency are at the core of everything they do."</p>
+                    <span class="client-name">Rajesh V.</span>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
+    <section id="insights" class="section legal-insights half-white-bg">
+        <div class="container">
+            <h2 class="center-title">Legal Insights</h2>
+            <div class="grid-3">
+                <div class="insight-col">
+                    <h3><i class="fas fa-gavel"></i> Latest Cases</h3>
+                    <ul class="insight-list">
+                        <li><a href="#">Criminal Procedural Rights 2026</a></li>
+                        <li><a href="#">Civil Settlement Landmarks</a></li>
+                    </ul>
+                </div>
+                <div class="insight-col">
+                    <h3><i class="fas fa-newspaper"></i> Firm News</h3>
+                    <ul class="insight-list">
+                        <li><a href="#">New Office Opening</a></li>
+                        <li><a href="#">Annual Pro Bono Award</a></li>
+                    </ul>
+                </div>
+                <div class="insight-col">
+                    <h3><i class="fas fa-file-alt"></i> Articles</h3>
+                    <ul class="insight-list">
+                        <li><a href="#">Child Custody Laws Explained</a></li>
+                        <li><a href="#">Rights of the Accused</a></li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <!-- 📰 INSIGHTS -->
-    <section id="insights">
-        <h2>Legal Insights</h2>
-
-        <div class="insights-container">
-            <div class="insight-card"><h3>Latest Cases</h3></div>
-            <div class="insight-card"><h3>Firm News</h3></div>
-            <div class="insight-card"><h3>Articles</h3></div>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="center-title">Contact Us</h2>
+            <div class="flex-row">
+                <div class="flex-col map-area">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62844.07544062325!2d77.94726281734913!3d10.361456108155556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9df495393043f%3A0x673c683834a36a7!2sDindigul%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1711612000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="address-box">
+                        <i class="fas fa-map-marker-alt"></i> India
+                    </div>
+                </div>
+                <div class="flex-col form-area">
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="How can we help?"></textarea>
+                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- 🔻 FOOTER -->
-    <footer>
-        <p>© 2026 Justice Law Firm</p>
-        <p><a href="#">Disclaimer</a> | <a href="#">Privacy Policy</a></p>
+    <footer class="legal-footer">
+        <div class="container">
+            <p class="disclaimer">ATTORNEY ADVERTISING. Prior results do not guarantee a similar outcome.</p>
+            <p>© 2026 Law Firm LLP. All Rights Reserved.</p>
+        </div>
     </footer>
 
 </body>
