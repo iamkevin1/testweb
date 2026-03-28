@@ -33,31 +33,24 @@ body { font-family: 'Times New Roman', Times, serif; color: #1a1a1a; line-height
     font-size: 14px; letter-spacing: 2px; font-weight: bold; border: 1px solid #FDFBF7;
 }
 
-/* PRACTICE AREAS - Horizontal with centered icons */
-.grid-item { text-align: left; padding: 20px; }
+/* PRACTICE AREAS - Icons & text centered */
+.grid-item { text-align: center; padding: 20px; }
 .icon-wrapper { text-align: center; margin-bottom: 20px; }
 .grid-item i { font-size: 40px; color: #001529; }
+.grid-item p { max-width: 300px; margin: 0 auto; }
 
-/* Update this specific block in your style.css */
-.grid-item { 
-    text-align: center; /* This centers the Title and Paragraph */
-    padding: 20px; 
-}
-
-.icon-wrapper { 
-    text-align: center; 
-    margin-bottom: 20px; 
-}
-
-/* Ensure the description paragraph also stays centered */
-.grid-item p {
+/* ABOUT - Image Column smaller */
+.founder-img-container {
+    flex: 0 0 30% !important; /* Forces the image column to stay small */
     text-align: center;
-    max-width: 300px; /* Optional: keeps the text block tidy */
-    margin: 0 auto;   /* Centers the text block itself */
 }
-
-/* ABOUT - Text Centered */
-.small-height-img { max-height: 350px; width: 100%; object-fit: cover; border-radius: 2px; }
+.small-height-img { 
+    max-height: 280px; /* Reduced further for a "small" look */
+    width: auto; 
+    max-width: 100%;
+    object-fit: contain; 
+    border-radius: 4px; 
+}
 .text-center { text-align: center; }
 .about-text h3 { margin-bottom: 20px; color: #001529; }
 
@@ -66,14 +59,10 @@ body { font-family: 'Times New Roman', Times, serif; color: #1a1a1a; line-height
 .proof-badge { font-size: 10px; color: #27ae60; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; }
 .client-name { display: block; margin-top: 15px; font-weight: bold; color: #001529; }
 
-/* LEGAL INSIGHTS - Modern Styling */
+/* LEGAL INSIGHTS */
 .insight-col { background: #fff; padding: 25px; border-top: 3px solid #001529; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 .insight-col h3 { color: #001529; margin-bottom: 20px; font-size: 1.2rem; }
-.insight-col h3 i { margin-right: 10px; opacity: 0.7; }
-.insight-list { list-style: none; }
-.insight-list li { margin-bottom: 12px; padding-left: 15px; position: relative; }
 .insight-list li::before { content: '→'; position: absolute; left: 0; color: #001529; }
-.insight-list a { color: #1a1a1a; text-decoration: none; font-size: 14px; transition: color 0.3s; }
 .insight-list a:hover { color: #001529; text-decoration: underline; }
 
 /* CONTACT */
@@ -92,4 +81,5 @@ form input, form textarea { width: 100%; padding: 12px; margin-bottom: 15px; bor
 
 @media (max-width: 900px) {
     .grid-3, .flex-row { flex-direction: column; grid-template-columns: 1fr; }
+    .founder-img-container { flex: 1 1 100% !important; }
 }
