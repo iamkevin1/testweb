@@ -1,282 +1,255 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
 
-\f0\fs24 \cf0 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');\
-\
-/* 
-\f1 \uc0\u55357 \u56629 
-\f0  ROOT BRANDING */\
-:root \{\
-    --navy: #001529;\
-    --offwhite: #FDFBF7;\
-    --light-gray: #f5f5f5;\
-    --text-dark: #222;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56629 
-\f0  GLOBAL */\
-body \{\
-    margin: 0;\
-    font-family: Georgia, serif;\
-    background-color: var(--offwhite);\
-    color: var(--navy);\
-    line-height: 1.6;\
-\}\
-\
-/* HEADINGS */\
-h1, h2, h3 \{\
-    font-family: 'Playfair Display', serif;\
-    margin-bottom: 10px;\
-\}\
-\
-/* LINKS */\
-a \{\
-    text-decoration: none;\
-    color: var(--navy);\
-\}\
-\
-/* BUTTON */\
-button \{\
-    background-color: var(--navy);\
-    color: var(--offwhite);\
-    border: none;\
-    padding: 12px 24px;\
-    font-size: 13px;\
-    letter-spacing: 1px;\
-    cursor: pointer;\
-    transition: 0.3s;\
-\}\
-\
-button:hover \{\
-    background-color: #002a4d;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56629 
-\f0  HEADER (WHITEHOUSE STYLE) */\
-.header \{\
-    background-color: var(--offwhite);\
-    border-bottom: 1px solid #e5e5e5;\
-    padding: 10px 50px;\
-\}\
-\
-.nav-container \{\
-    display: flex;\
-    align-items: center;\
-    justify-content: space-between;\
-\}\
-\
-/* LEFT */\
-.nav-left \{\
-    display: flex;\
-    align-items: center;\
-    gap: 15px;\
-\}\
-\
-.menu-icon \{\
-    font-size: 18px;\
-    color: var(--navy);\
-\}\
-\
-/* LOGO */\
-.logo \{\
-    font-size: 14px;\
-    letter-spacing: 1px;\
-\}\
-\
-.brand-red \{\
-    color: #8b1e1e; /* toned-down formal red */\
-    font-weight: 600;\
-\}\
-\
-.llp \{\
-    font-size: 10px;\
-    margin-left: 3px;\
-\}\
-\
-/* CENTER NAV */\
-.nav-links \{\
-    display: flex;\
-    gap: 45px;\
-    list-style: none;\
-    margin: 0;\
-\}\
-\
-.nav-links a \{\
-    font-size: 11px;\
-    text-transform: uppercase;\
-    letter-spacing: 1.5px;\
-    color: var(--navy);\
-    font-weight: 500;\
-    position: relative;\
-\}\
-\
-/* HOVER UNDERLINE (SUBTLE) */\
-.nav-links a::after \{\
-    content: "";\
-    position: absolute;\
-    width: 0;\
-    height: 1px;\
-    bottom: -4px;\
-    left: 0;\
-    background-color: var(--navy);\
-    transition: 0.3s;\
-\}\
-\
-.nav-links a:hover::after \{\
-    width: 100%;\
-\}\
-\
-/* RIGHT ICONS */\
-.nav-right \{\
-    display: flex;\
-    gap: 15px;\
-    font-size: 14px;\
-    color: var(--navy);\
-\}\
-\
-/* 
-\f1 \uc0\u55358 \u56760 
-\f0  HERO */\
-#hero \{\
-    text-align: center;\
-    padding: 100px 20px;\
-    background-color: var(--offwhite);\
-\}\
-\
-#hero h2 \{\
-    font-size: 42px;\
-\}\
-\
-#hero p \{\
-    max-width: 600px;\
-    margin: 20px auto;\
-    font-size: 15px;\
-\}\
-\
-/* 
-\f1 \uc0\u55358 \u56809 
-\f0  PRACTICE (GRID) */\
-#practice \{\
-    padding: 80px 50px;\
-    text-align: center;\
-\}\
-\
-.practice-container \{\
-    display: grid;\
-    grid-template-columns: repeat(3, 1fr);\
-    gap: 25px;\
-    margin-top: 40px;\
-\}\
-\
-.card \{\
-    border: 1px solid #ddd;\
-    padding: 25px;\
-    background-color: white;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56424 \u8205 \u9878 \u65039 
-\f0  ABOUT (FLEXBOX) */\
-#about \{\
-    padding: 80px 50px;\
-\}\
-\
-.about-container \{\
-    display: flex;\
-    gap: 50px;\
-    align-items: center;\
-\}\
-\
-.about-image img \{\
-    width: 100%;\
-    max-width: 420px;\
-\}\
-\
-.about-text \{\
-    max-width: 500px;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56492 
-\f0  TESTIMONIALS */\
-#testimonials \{\
-    padding: 80px 50px;\
-    background-color: var(--navy);\
-    color: var(--offwhite);\
-    text-align: center;\
-\}\
-\
-.testimonial-container \{\
-    display: flex;\
-    gap: 25px;\
-    justify-content: center;\
-    margin-top: 40px;\
-\}\
-\
-.testimonial \{\
-    border: 1px solid rgba(255,255,255,0.3);\
-    padding: 25px;\
-    max-width: 260px;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56542 
-\f0  CONTACT */\
-#contact \{\
-    padding: 80px 50px;\
-\}\
-\
-.contact-container \{\
-    display: flex;\
-    gap: 50px;\
-\}\
-\
-.contact-form input,\
-.contact-form textarea \{\
-    width: 100%;\
-    padding: 12px;\
-    margin-bottom: 12px;\
-    border: 1px solid #ccc;\
-    font-family: Georgia, serif;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56560 
-\f0  INSIGHTS */\
-#insights \{\
-    padding: 80px 50px;\
-    text-align: center;\
-\}\
-\
-.insights-container \{\
-    display: flex;\
-    gap: 25px;\
-    justify-content: center;\
-    margin-top: 40px;\
-\}\
-\
-.insight-card \{\
-    border: 1px solid #ddd;\
-    padding: 25px;\
-    background-color: white;\
-\}\
-\
-/* 
-\f1 \uc0\u55357 \u56635 
-\f0  FOOTER */\
-footer \{\
-    background-color: var(--navy);\
-    color: var(--offwhite);\
-    text-align: center;\
-    padding: 25px;\
-\}\
-\
-footer a \{\
-    color: var(--offwhite);\
-\}}
+/* 🔵 ROOT BRANDING */
+:root {
+    --navy: #001529;
+    --offwhite: #FDFBF7;
+    --light-gray: #f5f5f5;
+    --text-dark: #222;
+}
+
+/* 🔵 GLOBAL */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: var(--offwhite);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: var(--navy);
+}
+
+/* BUTTON */
+button {
+    background-color: var(--navy);
+    color: var(--offwhite);
+    border: none;
+    padding: 12px 24px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #002a4d;
+}
+
+/* 🔵 HEADER (WHITEHOUSE STYLE) */
+.header {
+    background-color: var(--offwhite);
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 50px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LEFT */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon {
+    font-size: 18px;
+    color: var(--navy);
+}
+
+/* LOGO */
+.logo {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.brand-red {
+    color: #8b1e1e; /* toned-down formal red */
+    font-weight: 600;
+}
+
+.llp {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+/* CENTER NAV */
+.nav-links {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links a {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--navy);
+    font-weight: 500;
+    position: relative;
+}
+
+/* HOVER UNDERLINE (SUBTLE) */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--navy);
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* RIGHT ICONS */
+.nav-right {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: var(--navy);
+}
+
+/* 🦸 HERO */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--offwhite);
+}
+
+#hero h2 {
+    font-size: 42px;
+}
+
+#hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+/* 🧩 PRACTICE (GRID) */
+#practice {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.practice-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background-color: white;
+}
+
+/* 👨‍⚖️ ABOUT (FLEXBOX) */
+#about {
+    padding: 80px 50px;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 420px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+/* 💬 TESTIMONIALS */
+#testimonials {
+    padding: 80px 50px;
+    background-color: var(--navy);
+    color: var(--offwhite);
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.testimonial {
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 25px;
+    max-width: 260px;
+}
+
+/* 📞 CONTACT */
+#contact {
+    padding: 80px 50px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    font-family: Georgia, serif;
+}
+
+/* 📰 INSIGHTS */
+#insights {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.insights-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.insight-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background-color: white;
+}
+
+/* 🔻 FOOTER */
+footer {
+    background-color: var(--navy);
+    color: var(--offwhite);
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: var(--offwhite);
+}
